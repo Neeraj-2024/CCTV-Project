@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.m-shadow {
+    box-shadow: 0px 1px 15px 5px rgb(0 0 0 / 16%);
+}
+
+.navbar-top {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999999999;
+    background: rgb(255 255 255 / 50%);
+    backdrop-filter: blur(16px);
+}
+
+.my-slider .item {
+    height: 650px;
+    position: relative;
+}
+
+.my-slider .item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.my-slider .item .cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 25%);
+    display: flex;
+    align-items: center;
+}
+
+.my-slider .cover h1 {
+    font-size: 56px;
+}
+
+.style-heading {
+    background: linear-gradient(135deg, #feac5e, #c779d0, #4bc0c8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 5.5rem;
+}
+
+.animate-border {
+    position: relative;
+    display: block;
+    width: 115px;
+    height: 4px;
+    background: linear-gradient(135deg, #feac5e, #c779d0, #4bc0c8);
+    overflow: hidden;
+}
+
+.animate-border:after {
+    position: absolute;
+    content: "";
+    width: 35px;
+    height: 4px;
+    left: 15px;
+    bottom: 0;
+    border-left: 10px solid #fff;
+    border-right: 10px solid #fff;
+    -webkit-animation: animborder 2s linear infinite;
+    animation: animborder 2s linear infinite;
+}
+
+@keyframes animborder {
+    0% {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+    }
+
+    100% {
+        -webkit-transform: translateX(113px);
+        transform: translateX(113px);
+    }
+}
+
+.mcard img {
+    width: 90px;
+    height: 90px;
+}
+
+.radius-20 {
+    border-radius: 20px;
+}
+
+.about-sec img {
+    height: 3rem;
+}
+
+.bg-grey {
+    background: #eeeeee;
+}
+
+.sector-bg {
+    background: linear-gradient(to right, #181818 5%, rgba(24, 24, 24, 0) 80%), url('https://img.freepik.com/premium-photo/professional-cctv-technician-working_146377-3766.jpg?w=1060');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding: 90px 0;
+}
+
+.sector-bg span {
+    background: #f4992e;
+    font-size: 3rem;
+}
+
+.sector-bg img {
+    width: 100px;
+}
+
+.fs-12 {
+    font-size: 12px;
+}
+
+.industry {
+    width: 50px;
+    height: 50px;
+}
+
+.we-offer-img {
+    background: url('https://img.freepik.com/free-vector/set-security-cameras-pillar-realistic-composition-blue-sky-with-clouds_1284-31840.jpg?t=st=1657703289~exp=1657703889~hmac=356c64261223bd721d7b387c9f1c4dabdd011b06ee4755f43d203fe569fa7d80&w=740');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.property-card {
+    height: 18em;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+    -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    border-radius: 16px;
+    overflow: hidden;
+}
+.property-card:hover .property-image img {
+    height: 18em;
+}
+.property-image img {
+    height: 12em;
+    width: 100%;
+    object-fit: contain;
+    -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.property-card:hover .property-description {
+    height: 0em;
+    padding: 0px 1em;
+}
+.property-description {
+    background-color: #FAFAFC;
+    height: 6.5em;
+    width: 100%;
+    position: absolute;
+    bottom: 0em;
+    -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    padding: 0.5em 1em;
+    text-align: center;
+}
+.camera-men{
+    background: url('https://www.angindia.in/images/security-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.feedback img{
+    height: 90px;
+    width: 90px;
+}
+.social li{
+    list-style-type: none;
+}
+.social img{
+    height: 45px;
+    width: 45px;
+}

@@ -1,0 +1,17 @@
+@media only screen and (max-width: 768px){
+    .style-heading{
+        font-size: 24px;
+    }
+    .my-slider .item{
+        height: 500px;
+    }
+    .my-slider .cover h1{
+        font-size: calc(1.375rem + 1.5vw);
+    }
+    .sector-bg span{
+        font-size: 1.5rem;
+    }
+    .industry{
+        left: 50% !important;
+    }
+}
